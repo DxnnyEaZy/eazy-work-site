@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · EaZy-Work</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="lead">EaZy-Work · last updated 13 November 2026</p>
+
+<p>EaZy-Work is a personal desktop app for Windows, made by Dxnny (Daniel Marques Matos) and used only on his own PC with his own YouTube channels. This page explains what it does with Google user data when the owner connects his Google account. See the <a href="index.html">home page</a> for what the app is.</p>
+
+<h2>Data it reads from Google</h2>
+<ul>
+<li><strong>Channel and uploads</strong> (<code>youtube.readonly</code>): the connected channel's ID and, for its recent uploads, video ID, title, duration, publish or scheduled time and processing status.</li>
+<li><strong>YouTube Analytics</strong> (<code>yt-analytics.readonly</code>): for the channel's Shorts of the last 28 days, average view duration, average percentage viewed, engaged views, views and subscribers gained. Only when the "Read YouTube Analytics" switch is on.</li>
+</ul>
+
+<h2>What it sends to Google</h2>
+<ul>
+<li><strong>Thumbnails</strong> (<code>youtube.upload</code>): when the "Upload the thumbnail" switch is on, it uploads the image the owner picked from his own project folder as the thumbnail of the matching Short (<code>thumbnails.set</code>). If the image is too large or in another format, a smaller JPG copy is made on the PC first. It never uploads, edits or deletes videos, and it does nothing else with this permission.</li>
+</ul>
+
+<h2>Where the data is stored</h2>
+<ul>
+<li>Only on the owner's PC, in the app's data folder (<code>analytics.json</code> and <code>portadas.json</code>) and in the app's local log files, which may include video IDs and titles.</li>
+<li>The channel report the app writes to a folder on the same PC (a CSV and a JSON file) includes the YouTube Analytics figures above, next to public video statistics.</li>
+<li>The Google sign-in tokens and the OAuth client secret are kept in the Windows Credential Manager, never in plain files and never shown in the app or its logs.</li>
+<li>There is no EaZy-Work server or cloud service: Google user data is not sent to any other server.</li>
+</ul>
+
+<h2>Sharing</h2>
+<p>Google user data is not sold, rented or shared with anyone, and it is not used for advertising. EaZy-Work also uses an AI service (Anthropic's Claude API) for other tasks, such as writing clip titles from video transcripts; no data obtained from Google APIs is sent to it. EaZy-Work's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Keeping and deleting data</h2>
+<ul>
+<li>The figures are replaced with the latest ones at every read; Shorts older than 14 days stop being checked for thumbnails.</li>
+<li>To stop all access, press "Revoke" in EaZy-Work (Settings › YouTube): it revokes the token with Google, deletes it from the Windows Credential Manager and turns both switches off.</li>
+<li>Access can also be removed at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+<li>The local files can be deleted from the app's data folder at any time.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>If what the app does with Google user data changes, this page is updated first, with a new date.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:dxnny.eazy@gmail.com">dxnny.eazy@gmail.com</a></p>
+
+<footer>EaZy-Work · Dxnny · <a href="index.html">Home</a></footer>
+</main>
+</body>
+</html>

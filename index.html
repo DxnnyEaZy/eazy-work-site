@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EaZy-Work</title>
+<meta name="description" content="EaZy-Work is a personal Windows desktop app by Dxnny for preparing and publishing short videos.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>EaZy-Work</h1>
+<p class="lead">A personal desktop app for Windows, made by Dxnny (Daniel Marques Matos) for his own YouTube channels.</p>
+
+<h2>What it is</h2>
+<p>EaZy-Work runs only on its owner's PC. It helps prepare short videos: it transcribes videos, suggests and cuts clips, keeps track of what was published and builds a simple report for each channel. It is not a hosted service, it has no user accounts and it is not offered to the public. Its only user is its developer.</p>
+
+<h2>Why it asks for access to a Google account</h2>
+<p>EaZy-Work can be connected to the owner's own YouTube channel with Google sign-in (OAuth). This is optional and every feature that uses it has its own switch, off by default. It asks for three permissions:</p>
+<table>
+<tr><th>Permission</th><th>What EaZy-Work does with it</th></tr>
+<tr><td><code>youtube.readonly</code><br>See your YouTube account</td><td>Reads the connected channel's ID and its list of recent uploads (video ID, title, duration, publish time and processing status), so it knows which Shorts were published and when YouTube has finished processing them.</td></tr>
+<tr><td><code>yt-analytics.readonly</code><br>View YouTube Analytics reports</td><td>Reads, for the channel's Shorts of the last 28 days, average view duration, average percentage viewed, engaged views, views and subscribers gained, and shows them in the app's channel report.</td></tr>
+<tr><td><code>youtube.upload</code><br>Manage your YouTube videos</td><td>Used for one call only: <code>thumbnails.set</code>, to upload the thumbnail image the owner chose for one of his own Shorts. It never uploads, edits or deletes videos.</td></tr>
+</table>
+
+<h2>Privacy</h2>
+<p>Everything stays on the owner's PC. Nothing from Google is sent to any server run by EaZy-Work (there is none), and it is never shared or sold. Read the full <a href="privacy.html">Privacy Policy</a>.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:dxnny.eazy@gmail.com">dxnny.eazy@gmail.com</a></p>
+
+<footer>EaZy-Work · Dxnny · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
